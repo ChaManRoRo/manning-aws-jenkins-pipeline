@@ -1,0 +1,1 @@
+# manning-aws-jenkins-pipeline
