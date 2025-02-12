@@ -48,15 +48,7 @@ pipeline {
                 }
             }
         }
-        stage('Destroy Terraform') {
-            steps {
-                input message: "Approve Terraform Destroy?", ok: "Destroy"
-                withCredentials([[
-                    $class: 'AmazonWebServicesCredentialsBinding',
-                    credentialsId: 'manning_AWS'
-                ]]) {
-                    sh 'terraform destroy -auto-approve'
-                }
+        
             }
         }
     }
