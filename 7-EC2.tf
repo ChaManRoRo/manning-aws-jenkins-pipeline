@@ -1,7 +1,7 @@
 # EC2 for prod
 
 resource "aws_instance" "prod-basicmicrosoft" {
-  ami           = "ami-0c808db6baea2d0ed"
+  ami           = "ami-01b4cce1dd306d1ee"
   instance_type = "t2.micro"
 
   key_name = "CloudMaraduers-prod-A-winBastion01"
